@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#0093E9">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <!--LINK BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--CDN ANIMACION-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--FAVICON-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!--Iconos-->
+    <script src="https://kit.fontawesome.com/6a08351fa5.js" crossorigin="anonymous"></script>
+    <!--Estilo Scss-->
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>¡Hola! Ingresa tu teléfono, e-mail o usuario</title>
+</head>
+
+<body id="up">
+    <header class="header">
+
+        <div class="imgLogo"><a href="index.html"><img class="wow animate__animated animate__rollIn logo"
+                    src="img/logoPetShop.png" alt="logo Paw-Pet Pet-Shop y Peluqueria canina"></a></div>
+
+    </header>
+
+    <main class="usuario">
+        <form class="cajaNuevoUsuario" action="name">
+
+            <div class="nuevoUsuario">
+                <h1>¡Bienvenido!<br>Ingresá tu teléfono, e-mail o usuario.</h1>
+                <label class="textoUsuario" for="name">E-mail o usuario</label>
+                <input class="cajaUsuario" type="text" name="nombre" required>
+
+
+                <label class="textoPassword" for="name">Contraseña</label>
+                <input class="cajaPassword" type="password" name="nombre" required>
+
+                <div class="botonesForm">
+                    <input class="userName" type="submit" value="Ingresar">
+                    <a class="userCreate" href="registro.html">Crear cuenta</a>
+                </div>
+                <hr>
+                <a class="problemaUsuario" href="contacto.html">Ayuda para ingresar a mi cuenta</a>
+            </div>
+
+        </form>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Pie de pagina-->
+    <footer>
+
+        <!-- Copyright -->
+        <div class="row text-center">
+
+            <div class="col-md-4 box">
+                <span class="copyright quick-links">Copyright &copy; Daniela Rodriguez - <script>
+                        document.write(new Date().getFullYear())
+                    </script> | Tel: +549 113378-0479
+                </span>
+            </div>
+        </div>
+
+    </footer>
+    <!--SweetAlert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!--INDEX.JS-->
+    <script src="js/index.js"></script>
+    <!--JS-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!--WOW-->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,586 @@
+//Pantalla Tablet
+@media only screen and (min-width: 768px){
+    //Seccion Header
+    .header{
+        padding: 1%;
+        position: sticky;
+        top: 0;
+        justify-content: space-evenly;
+        //Seccion Logo
+        .imgLogo{
+            width: 10%;
+            .logo{
+                width: 98%;
+            }
+        }
+        //Seccion barra buscar
+        form{
+            width: 68%;
+            left: 14%;
+            .buscar{
+                display: flex;
+                width: 100%;
+                .search{
+                    width: 95%;
+                    padding: 10px;
+                    height: 100%;
+                }
+                .fa-search{
+                    width: 9%;
+                    height: 41px;
+                    padding: 14px;
+                }
+            }
+        }
+        //Menú Hamburguesa
+        .barraMenu{
+            right: 10%;
+        }
+        //Menú Usuario
+        .menuUsuario{
+            padding: 6px 10px;
+            .contenidoUsuario{
+                .fa-user-alt{
+                    width: 56px;
+                }
+            }
+        }
+        //Menú nuevo usuario y carrito
+        .menuIngreso{
+            width: 5%;
+        }
+        //Barra de navegacion principal
+        .navbar{
+            width: 100%;
+            padding: 3px;
+            ul{
+                flex-direction: row;
+            }
+        }
+    }
+    //Seccion Inicio
+    .inicio{
+        .titulo{
+            padding: 33px;
+        }
+        .perroNegro{
+            width: 38%;
+            margin: 9%;
+        }
+        .inicioProductos{
+            .tituloDos{
+                margin: 0;
+            }
+            .cajas{
+                flex-direction: row;
+                .imgInicioMini{
+                    width: 38%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    //Seccion Footer
+    footer{
+        align-items: stretch;
+        .cajaFooter{
+            align-items: baseline;
+            flex-direction: row;
+            justify-content: space-around;
+            .iconos{
+                width: 28vw;
+                h2{
+                    font-size: 1.3rem;
+                }
+                .redes{
+                    width: 5vw;
+                    margin: 2%;
+                }
+            }
+            .navbar{
+                text-align: center;
+                flex-direction: column-reverse;
+                .menu{
+                    width: 100%;
+                    flex-direction: column;
+                    align-items: center;
+                    ul{
+                        display: inherit;
+                        li{
+                            a{
+                                margin: 8px;
+                            }
+                        }
+                    }
+                    .logoFooter{
+                        width: 7vw;
+                    }
+                }           
+            }
+        }
+        .col-md-4{
+            width: 100%;
+        }
+    }
+    //Seccion Nosotros
+    .nosotros{
+        .sobreNosotros{
+            .imgTexto{
+                padding: 3%;
+            }
+            .perro{
+                width: 40%;
+                margin: 3% auto;
+            }
+        }
+        .nosotrosDos{
+            .tarjetas{
+                .tarjetaPerro{
+                    width: 33%;
+                }
+            }
+        }
+    }
+    //Seccion Servicios
+    .servicios{
+        margin: 0;
+        .banner{
+            display: flex;
+            align-items: center;
+            background-position: 74%;
+            h1{
+                display: block;
+                margin-left: 87px;
+                font-size: 3.2rem;
+            }
+        }
+        .seccionServicios{
+            margin: 5% auto;
+            padding: 3%;
+            flex-direction: column;
+            .tarjetaServicios{
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                .tarjetas{
+                    width: 47%;
+                    padding: 3%;
+                    display: block;
+                    .tarjetaDoble{
+                        display: flex;
+                        flex-direction: column-reverse;
+                    }
+                }
+            }
+            .tarjetaSola{
+                margin: 0;
+                padding: 4%;
+                display: flex;
+                flex-direction: column;
+                .cajaSola{
+                    display: flex;
+                    flex-direction: row;
+                    .tarjetaPerro{
+                        width: 30%;
+                    }
+                }
+            }
+        }
+        .productos{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .tarjetaProducto{
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                .cajaAlimentos{
+                    width: 30%;
+                    display: flex;
+                    .tarjetaAlimento{
+                        margin: 4% auto;
+                    }
+                }
+            }
+        }
+    }
+    //Seccion Contacto
+    .contacto{
+        margin: 10% auto;
+        .animalesBorde{
+            display: none;
+        }
+    }
+    //Seccion Footer
+    footer{
+        padding: 2%;
+        .cajaFooter{
+            align-items: center;
+            .logoFooter{
+                width: 9vw;
+            }
+            .iconos{
+                .redes{
+                    width: 4vw;
+                }
+            }
+        }
+    }
+}
+//Pantalla Desktop
+@media only screen and (min-width: 1024px){
+    //Seccion Header
+    .header{
+        padding: 1% 2%;
+        display: flex;
+        justify-content: flex-start;
+        //Seccion Logo
+        .imgLogo{
+            width: 8%;
+            .logo{
+                width: 85%;
+                height: auto;
+            }
+        }
+        //Seccion barra buscar
+        form{
+            width: 50%;
+            left: 12%;
+            justify-content: center;
+            .buscar{
+                display: flex;
+                width: 100%;
+                align-items: center;
+                .search{
+                    width: 95%;
+                    height: 38px;
+                }
+                .fa-search{
+                    width: 38px;
+                    height: 38px;
+                    padding: 12px;
+                }
+            }
+        }
+        //Menú nuevo usuario y carrito
+        .menuIngreso{
+            width: 40%;
+            display: flex;
+            align-items: baseline;
+            justify-content: space-evenly;
+            ul{
+                list-style: none;
+                align-items: center;
+                display: contents;
+                li{
+                    a{
+                        padding: 1px 13px;
+                        font-size: 1rem;
+                        font-weight: bold;
+                        color: $blanco;
+                        display: block;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .fa-cart-arrow-down{
+                color: $blanco;
+            }
+            //Carrito - Menú lateral
+        .btn{
+            .bg-danger {
+                width: 100%;
+                font-size: 15px;
+                padding: 3px;
+            }
+        }
+        }
+        //Menú Usuario
+        .menuUsuario{
+            display: none;
+        }
+        //Menú Hamburguesa
+        .barraMenu{
+            display: none;
+        }
+        .navbar{
+            width: 100%;
+            position: absolute;
+            transform: none;
+            padding-bottom: 15px;
+            ul{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                
+                li{
+                    border-right: 5px solid $blanco;
+                    border-left: 5px solid $blanco;
+                    border-radius: 20px;
+                    position: relative;
+                    margin: 0 1%;
+                    padding: 2px;
+                    &:hover{
+                        background-color: $verdeClaro;
+                        border-right: 5px solid $blanco;
+                        border-left: 5px solid $blanco;
+                        .subMenu{
+                            transform: scale(1, 1);
+                        }
+                    }
+                    a{
+                        color: $blanco;
+                        font-size: 1rem;
+                        font-weight: bold;
+                        padding: 2px 9px;
+                        &:hover{
+                            color: $blanco;
+                        }
+                    }
+                    .subMenu{
+                        transition: 200ms ease-in;
+                        transform-origin: top;
+                        width: 100%;
+                        height: 73%;
+                        position: absolute;
+                        border-radius: 5px;
+                        text-align: center;
+                        right: 1px;
+                        top: 32px;
+                        display: block;
+                        transform: scale(1, 0);
+                        li{
+                            width: 100%;
+                            padding: 1px;
+                            margin: 0;
+                            text-align: center;
+                            background-color: $verdeClaro;
+                            border-right: 5px solid $blanco;
+                            border-left: 5px solid $blanco;
+                            &:hover{
+                                border-right: 5px solid $azul;
+                                border-left: 5px solid $azul;
+                                background-color: $blanco;
+                                }
+                            a{
+                                padding: 3% 1%;
+                                text-align: center;
+                                color: $blanco;
+                                font-weight: bold;
+                                &:hover{
+                                    color: $azul;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //Seccion Inicio
+    .inicio{
+        .titulo{
+            flex-direction: row;
+            justify-content: space-around;
+            h1{
+                font-size: 4rem;
+            }
+            h2{
+                font-size: 2.8rem;
+            }
+            .perroNegro{
+                width: 19%;
+                margin: 0;
+            }
+        }
+            .carousel{
+                top: 50px;
+                display: block;
+                position: relative;
+            }
+        .inicioProductos{
+            flex-direction: column;
+            align-items: flex-start;
+            .tituloDos{
+                font-size: 2.4rem;
+                text-align: left;
+            }
+            .contenedorInicio{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                .cajas{
+                    width: 45%;
+                    padding: 3%;
+                    flex-direction: row;
+                    align-items: center;
+                }
+            }
+            
+        }
+    }
+    //Seccion Nosotros
+    .nosotros{
+        margin: 10% auto;
+        .sobreNosotros{
+            padding: 3%;
+            h1{
+                font-size: 2.4rem;
+                margin: 0 0 2% 0 ;
+            }
+            .imgTexto{
+                flex-direction: row-reverse;
+                align-items: center;
+                padding: 3%;
+                display: flex;
+                p{
+                    font-size: 1.4rem;
+                }
+            }
+            .perro{
+                margin: 0 45px 0 0;
+                width: 25%;
+            }
+        }
+        .nosotrosDos{
+            padding: 3%;
+            h2{
+                font-size: 2.3rem;
+                margin-bottom: 2%;
+            }
+            .tarjetasNosotros{
+                display: flex;
+                justify-content: space-around;
+                .tarjetas{
+                    width: 48%;
+                    margin: 0;
+                    padding: 3%;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+        .nosotrosTres{
+            padding: 4%;
+            .tarjetas{
+                margin: 0;
+                padding: 3%;
+                align-items: center;
+                p{
+                    font-size: 1.1rem;
+                }
+                .tarjetaPerro{
+                    width: 24%;
+                    margin: 2% auto;
+                }
+            }
+        }
+    }
+    //Seccion Servicios
+    .servicios{
+        .banner{
+            h1{
+                font-size: 4rem;
+            }
+        }
+        .seccionServicios{
+            margin: 3% auto;
+            padding: 2%;
+            .tarjetaServicios{
+                display: flex;
+                .tarjetas{
+                    width: 48%;
+                    margin: 1%;
+                    padding: 3%;
+                    .tarjetaDoble{
+                        flex-direction: row;
+                        align-items: flex-start;
+                        .tarjetaPerro{
+                            width: 17vw;
+                            height: auto;
+                            margin: 0%;
+                        }
+                    }
+                }
+            }
+            .tarjetaSola{
+                padding: 3%;
+                .cajaSola{
+                    display: flex;
+                    .tarjetaPerro{
+                        display: block;
+                        width: 17vw;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .productos{
+            .tarjetaProducto{
+                .boton{
+                    width: 70%;
+                }
+                .cajaAlimentos{
+                    width: 23%;
+                    padding: 1%;
+                    .tarjetaAlimento{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+    //Seccion Contactos
+    .contacto{
+        width: 64%;
+        margin: 10% auto;
+        padding: 3%;
+        .formulario{
+            width: 100%;
+            padding: 3%;
+            margin: 0;
+            label{
+                font-size: 1.2rem;
+            }
+            .botonEnviar{
+                width: 20%;
+                font-size: 1rem;
+                font-weight: bold;
+            }
+        }
+    }
+    //Seccion Footer
+    footer{
+        padding: 3%;
+        .cajaFooter{
+            align-items: center;
+            align-items: flex-start;
+            justify-content: space-between;
+            .logoFooter{
+                width: 8%;
+            }
+            .iconos{
+                width: 32%;
+                .redes{
+                    width: 3vw;
+                }
+            }
+            .navbar{
+                width: 32%;
+                padding: 0;
+                .menu{
+                    flex-direction: row-reverse;
+                    justify-content: space-evenly;
+                    align-items: flex-start;
+                    ul{
+                        flex-direction: column;
+                        align-items:flex-start;
+                    }
+                }
+            }
+        }
+    }
+}

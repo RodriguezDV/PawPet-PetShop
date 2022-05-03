@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#0093E9">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <!--LINK BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--CDN ANIMACION-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--FAVICON-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!--Iconos-->
+    <script src="https://kit.fontawesome.com/6a08351fa5.js" crossorigin="anonymous"></script>
+    <!--Estilo Scss-->
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Pet Shop - Nosotros 🐾</title>
+</head>
+
+<body id="up">
+    <header class="header">
+
+        <div class="wow animate__animated animate__rollIn imgLogo"><a href="index.html"><img class="logo"
+                    src="img/logoPetShop.png" alt="logo Paw-Pet Pet-Shop y Peluqueria canina"></a></div>
+
+        <form action="search">
+            <div class="buscar">
+                <input class="search" type="search" placeholder="Buscar productos, marcas y más..."><i
+                    class="fas fa-search"></i>
+            </div>
+        </form>
+
+        <input type="checkbox" id="nav-toggler" class="nav-toggler">
+        <label class="barraMenu" for="nav-toggler"><i class="fas fa-bars fa-1x"></i></label>
+
+        <nav class="menuIngreso">
+            <ul>
+                <li><a class="cuenta" href="registro.html">Creá tu cuenta</a></li>
+                <li><a class="ingreso" href="newUser.html">Ingresar</a></li>
+                <li><a class="compras" href="#">Mis compras</a></l>
+            </ul>
+
+            <button class="btn btnCarrito fas fa-cart-arrow-down" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+
+                <span id="badge"
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"></span>
+
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+
+                <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel">Mi carrito de compras</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+                <div id="sectorCarrito" class="sectorCarrito">
+
+                </div>
+
+                <div class="offcanvas-body">
+                    <div class="totalPedido">
+                        <h3 id="resultado"></h3>
+                    </div>
+
+                    <button class="botonComprar" type="button">Comprar</button>
+                    <button id="vaciarCarrito" class="vaciarCarrito" type="button">Vaciar Carrito</button>
+
+
+                </div>
+
+            </div>
+        </nav>
+
+        <nav class="navbar">
+            <div class="menuUsuario">
+                <div class="contenidoUsuario">
+                    <i class="fas fa-user-alt x2"></i>
+                    <div class="usuario">
+                        <h3>Bienvenido</h3>
+                        <p>Ingresá a tu cuenta para ver tus compras.</p>
+                    </div>
+                </div>
+                <div class="botonesUsuario">
+                    <a class="ingreso" href="newUser.html">Ingresá</a>
+                    <a class="cuenta" href="registro.html">Creá tu Cuenta</a>
+                </div>
+                <hr class="linea">
+            </div>
+
+            <ul>
+                <li><a href="index.html"><i class="fas fa-paw"></i> Inicio</a></li>
+                <li><a href="nosotros.html"><i class="fas fa-paw"></i> Nosotros</a></li>
+                <li><a href="servicios.html"><i class="fas fa-paw"></i> Servicios</a>
+                    <ul class="subMenu">
+                        <li><a href="servicios.html#productos"><i class="fas fa-paw"></i> Productos</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html"><i class="fas fa-paw"></i> Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="nosotros">
+        <section class="sobreNosotros">
+            <h1><i class="fas fa-paw"></i> Nosotros</h1>
+
+            <div class="imgTexto">
+                <p>En <strong>Paw-Pet</strong> somos un equipo de estilistas profesionales, experimentados
+                    en todas las
+                    razas, dispuestos a cubrir sin prisas, las necesidades de cada mascota.</p>
+                <img class="imgLogo perro" src="img/logoPetShop.png"
+                    alt="logo Paw-Pet Pet-Shop y Peluqueria canina">
+            </div>
+        </section>
+
+        <section class="nosotrosDos">
+            <h2><i class="fas fa-paw"></i> ¿Sabias que?</h2>
+
+            <div class="tarjetasNosotros">
+                <div class="tarjetas">
+                    <div>
+                        <h3>¿Cuantos dientes tienen?</h3>
+                        <p>Los cachorros tienen 28 dientes de leche, mientras que los perros en edad adulta cuentan con
+                            42
+                            dientes permanentes, porque ya tienen su molares completos. Ésta es una primera pista sobre
+                            cómo
+                            saber la edad de un perro mirando sus dientes.</p>
+                    </div>
+                    <img class="tarjetaPerro" src="img/manchitas.png" alt="">
+                </div>
+
+                <div class="tarjetas">
+                    <div>
+                        <h3>Sus bigotes le ayudan a ver en la oscuridad.</h3>
+                        <p>No es que que tengan visión nocturna, sino que gracias a sus bigotes pueden detectar cambios
+                            sutiles
+                            en las corrientes de aire, lo que les da información sobre el tamaño, la forma y la
+                            velocidad de las
+                            cosas cercanas, aunque sea de noche.</p>
+                    </div>
+                    <img class="tarjetaPerro" src="img/perroAcostado.png" alt="">
+                </div>
+
+        </section>
+
+        <section class="nosotrosTres">
+            <div class="tarjetas">
+                <div>
+                    <h3>Tu perro es tan inteligente como un niño de dos años.</h3>
+                    <p>¿Sabías que los perros comprenden aproximadamente 250 palabras o gestos? Muy similar a lo que le
+                        ocurre a un niño de 2 años. Por eso, es tan común que perros y niños pequeños se suelan llevar
+                        tan
+                        bien…</p>
+                </div>
+                <img class="tarjetaPerro" src="img/perroLentes.png" alt="">
+            </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <a class="up" href="#up"><img src="img/up.png" alt="boton arriba"></a>
+    <!--Pie de pagina-->
+    <footer>
+        <!--ICONOS FOOTER-->
+        <div class="cajaFooter">
+            <div class="iconos">
+                <h2><i class="fas fa-paw"></i> ¿Ya nos sigues?</h2>
+                <a href="#" target="_blank"><img class="redes" src="img/facebook.png" /></a>
+
+                <a href="#" target="_blank"><img class="redes" src="img/instagram.png" /></a>
+
+                <a href="#" target="_blank"><img class="redes" src="img/whatsapp.png" /></a>
+            </div>
+            <img class="logoFooter" src="img/logoPetShop.png" alt="">
+
+            <!--MENÚ FOOTER-->
+            <div class="navbar">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-paw"></i> Inicio</a></li>
+                        <li><a href="nosotros.html"><i class="fas fa-paw"></i> Nosotros</a></li>
+                        <li><a href="servicios.html"><i class="fas fa-paw"></i> Servicios</a></li>
+                        <li><a href="contacto.html"><i class="fas fa-paw"></i> Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="row text-center">
+
+            <div class="col-md-4 box">
+                <span class="copyright quick-links">Copyright &copy; Daniela Rodriguez - <script>
+                        document.write(new Date().getFullYear())
+                    </script> | Tel: +549 113378-0479
+                </span>
+            </div>
+        </div>
+
+    </footer>
+    <!--SweetAlert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!--INDEX.JS-->
+    <script type="module" src="js/renderCarrito.js"></script>
+    <!--JS-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!--WOW-->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

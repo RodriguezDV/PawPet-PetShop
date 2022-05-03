@@ -1,0 +1,65 @@
+//Footer
+footer{
+    width: 100%;
+    height: auto;
+    padding: 4%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0093E9;
+    background-image: linear-gradient(90deg, #0093E9 0%, #80D0C7 82%);    
+    .cajaFooter{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        .iconos{
+            width: 100%;
+            text-align: center;
+            h2{
+                color: $blanco;
+                letter-spacing: 1px;
+                text-align: center;
+            }
+            .redes{
+                width: 10vw;
+                margin: 7% 5%;
+            }
+        }
+        .navbar{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            .menu{
+                width: 60%;
+                display: flex;
+                align-items: center;
+                flex-direction: column-reverse;
+                ul{
+                    list-style: none;
+                    padding: 0;
+                    li{
+                        a{
+                            text-decoration: none;
+                            color: $blanco;
+                        }
+                    }
+                }
+            }
+        }
+        .logoFooter{
+            width: 33vw;
+            height: auto;
+            margin: 12px auto;
+        }
+    }
+    .copyright{
+        font-size: 0.8rem;
+        letter-spacing: 0.2rem;
+        font-family: 'Varela Round', sans-serif;
+        color: $blanco;
+        a{
+            text-decoration: none;
+            color: $blanco;
+        }
+    }
+}

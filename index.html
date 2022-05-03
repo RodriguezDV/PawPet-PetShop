@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#0093E9">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <!--LINK BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--CDN ANIMACION-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--FAVICON-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!--Iconos-->
+    <script src="https://kit.fontawesome.com/6a08351fa5.js" crossorigin="anonymous"></script>
+    <!--Toastify-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!--Estilo Scss-->
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Paw-Pet - Inicio 🐾</title>
+</head>
+
+<body id="up">
+    <!----------- HEADER ----------->
+    <header class="header">
+
+        <div class="imgLogo">
+            <a href="index.html"><img class="wow animate__animated animate__rollIn logo" src="img/logoPetShop.png"
+                    alt="logo Paw-Pet Pet-Shop y Peluqueria"></a>
+        </div>
+
+        <form action="search">
+            <div class="buscar">
+                <input class="search" type="search" placeholder="Buscar productos, marcas y más..."><i class="fas fa-search"></i>
+            </div>
+        </form>
+
+        <input type="checkbox" id="nav-toggler" class="nav-toggler">
+        <label class="barraMenu" for="nav-toggler"><i class="fas fa-bars fa-1x"></i></label>
+
+        <nav class="menuIngreso">
+            <ul>
+                <li><a class="cuenta" href="registro.html">Creá tu cuenta</a></li>
+                <li><a class="ingreso" href="newUser.html">Ingresar</a></li>
+                <li><a class="compras" href="#">Mis compras</a></l>
+            </ul>
+
+            <button class="btn btnCarrito fas fa-cart-arrow-down" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+
+                <span id="badge"
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"></span>
+
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+
+                <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel">Mi carrito de compras</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+                <div id="sectorCarrito" class="sectorCarrito">
+
+                </div>
+
+                <div class="offcanvas-body">
+                    <div class="totalPedido">
+                        <h3 id="resultado"></h3>
+                    </div>
+
+                    <button class="botonComprar" type="button">Comprar</button>
+                    <button id="vaciarCarrito" class="vaciarCarrito" type="button">Vaciar Carrito</button>
+                </div>
+
+            </div>
+        </nav>
+
+        <nav class="navbar">
+            <div class="menuUsuario">
+                <div class="contenidoUsuario">
+                    <i class="fas fa-user-alt x2"></i>
+                    <div class="usuario">
+                        <h3>Bienvenido</h3>
+                        <p>Ingresá a tu cuenta para ver tus compras.</p>
+                    </div>
+                </div>
+                <div class="botonesUsuario">
+                    <a class="ingreso" href="newUser.html">Ingresá</a>
+                    <a class="cuenta" href="registro.html">Creá tu Cuenta</a>
+                </div>
+                <hr class="linea">
+            </div>
+
+            <ul>
+                <li><a href="index.html"><i class="fas fa-paw"></i> Inicio</a></li>
+                <li><a href="nosotros.html"><i class="fas fa-paw"></i> Nosotros</a></li>
+                <li><a href="servicios.html"><i class="fas fa-paw"></i> Servicios</a>
+                    <ul class="subMenu">
+                        <li><a href="servicios.html#productos"><i class="fas fa-paw"></i> Productos</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html"><i class="fas fa-paw"></i> Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <!----------- INICIO ----------->
+    <main class="inicio">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade w-100" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/videoBannerUno.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/videoBannerDos.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/videoBannerTres.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/videoBannerCuatro.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+        <!----------- INICIO PRODUCTOS Y SERVICIOS ----------->
+        <section class="titulo">
+
+            <div>
+                <h2>En</h2>
+                <h1>Paw-Pet</h1>
+                <h2>
+                    le damos el mejor trato <br> a tu mejor amigo
+                </h2>
+            </div>
+            <img class="perroNegro" src="img/perroNegro.png" alt="">
+
+        </section>
+
+        <section class=" inicioProductos">
+            <h2 class="tituloDos"><i class="fas fa-paw"></i> Productos y Servicios</h2>
+
+            <div class="contenedorInicio">
+                <div class="cajas">
+                    <div class="">
+                        <h3><i class="fas fa-paw"></i> BAÑO</h3>
+                        <p>Le damos a tu mascota un baño relajante, la frescura y el aroma del shampoo son factores que
+                            lo ayudan a estimular su mente y cuerpo.</p>
+                    </div>
+                    <img class="imgInicioMini" src="img/perroToalla.png" alt="">
+                </div>
+
+                <div class="cajas">
+                    <div class="">
+                        <h3><i class="fas fa-paw"></i> ESTETICA</h3>
+                        <p>Corte de raza o especial, para que tu mascota peluda luzca mejor que nunca.</p>
+                    </div>
+                    <img class="imgInicioMini" src="img/chiguagua.png" alt="">
+                </div>
+
+                <div class="cajas">
+                    <div class="">
+                        <h3><i class="fas fa-paw"></i> ACCESORIOS</h3>
+                        <p>Encuentra los mejores accesorios y juguetes para mantener activo a tu amigo peludo a cada
+                            momento.</p>
+                    </div>
+                    <img class="imgInicioMini" src="img/accesorios.png" alt="">
+                </div>
+
+                <div class="cajas">
+                    <div>
+                        <h3><i class="fas fa-paw"></i> ALIMENTO</h3>
+                        <p>El mejor alimento, para la mejor mascota.
+                            Consiéntelo dándole alimento de la mejor calidad, para mantenerlo saludable.</p>
+                    </div>
+                    <img class="imgInicioMini" src="img/animales.png" alt="">
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <a class="up" href="#up"><img src="img/up.png" alt="boton arriba"></a>
+    <!--Pie de pagina-->
+    <footer>
+        <!--ICONOS FOOTER-->
+        <div class="cajaFooter">
+            <div class="iconos">
+                <h2><i class="fas fa-paw"></i> ¿Ya nos sigues?</h2>
+                <a href="#" target="_blank"><img class="redes" src="img/facebook.png" /></a>
+
+                <a href="#" target="_blank"><img class="redes" src="img/instagram.png" /></a>
+
+                <a href="#" target="_blank"><img class="redes" src="img/whatsapp.png" /></a>
+            </div>
+            <img class="logoFooter" src="img/logoPetShop.png" alt="">
+
+            <!--MENÚ FOOTER-->
+            <div class="navbar">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-paw"></i> Inicio</a></li>
+                        <li><a href="nosotros.html"><i class="fas fa-paw"></i> Nosotros</a></li>
+                        <li><a href="servicios.html"><i class="fas fa-paw"></i> Servicios</a></li>
+                        <li><a href="contacto.html"><i class="fas fa-paw"></i> Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="row text-center">
+
+            <div class="col-md-4 box">
+                <span class="copyright quick-links">Copyright &copy; Viviana Daniela Rodriguez - <script>
+                        document.write(new Date().getFullYear())
+                    </script> | E-mail: viviana.rodriguez1930@gmail.com | <a href="https://www.linkedin.com/in/viviana-daniela-rodriguez/" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+    <!--SweetAlert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!--INDEX.JS-->
+    <script type="module" src="js/renderCarrito.js"></script>
+    <!--JS-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!--WOW-->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!--jQuery-->
+    <script src="js/jQuery.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+.contacto{
+    width: 90%;
+    height: auto;
+    margin: 15% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0093E9;
+    background-image: linear-gradient(180deg, #0093E9 28%, #80D0C7 100%);
+    border-radius: 13px;
+    .formulario{
+        width: 90%;
+        height: auto;
+        padding: 5%;
+        margin: 5%;
+        border-radius: 13px;
+        background-color: $blanco;
+        h1{
+            color: $azul;
+        }
+        .datos{
+            p{
+                color: $azul;
+            }
+        }
+        .cajaDatos{
+            width: 100%;
+            padding: 4px 8px;
+            border: 1px solid $verdeClaro;
+            border-radius: 4px 12px 4px 12px;
+            &:focus{
+                outline: none; 
+            }
+        }
+        .cajaMensaje{
+            display: flex;
+            flex-direction: column;
+        }
+        label{
+            font-size: 1rem;
+            color: $azul;
+            margin: 10px 0 3px 9px;
+        }
+        .botonEnviar{
+            width: 77px;
+            padding: 1%;
+            background: $blanco;
+            border: 1px solid $azul;
+            color: $azul;
+            border-radius: 20px;
+            letter-spacing: 1px;
+            margin: 15px auto 0 auto;
+            display: block;
+            &:hover{
+                border: 1px solid $blanco;
+                background-color: $azul;
+                color: $blanco;
+            }
+        }
+    }
+}

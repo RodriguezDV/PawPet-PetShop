@@ -1,0 +1,62 @@
+@import"variables";
+@import"header";
+@import"footer";
+@import"inicio";
+@import"nosotros";
+@import"servicios";
+@import"contacto";
+@import"media";
+@import"newUser";
+@import"registro";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $verdeClaro;
+    background-image: url("../img/fondoHuellas.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    h1,h2,h3,h4,h5,h6{
+        font-family: 'Varela Round', sans-serif;
+    }
+    p, li{
+        font-family: 'Nunito', sans-serif;
+        letter-spacing: 1px;
+        color: $azulOscuro;
+    }
+    .fa-paw{
+        transform: rotate(22deg);
+    }  
+    //Boton UP huella
+    .up{
+        position: sticky;
+        left: 95%;
+        display: inline-block;
+        bottom: 0;
+        padding-top: 15px;
+        z-index: 1;
+        img{
+            width: 60px;
+        }
+    }
+    //SweetAlet
+    .swal-button {
+        padding: 7px 20px;
+        border-radius: 15px;
+        color: $negro;
+        background-color: $blanco;
+        font-size: 12px;
+        font-weight: bolder;
+    }
+    .swal-footer {
+        background-color: $azul;
+        margin-top: 30px;
+        overflow: hidden;
+    }
+}

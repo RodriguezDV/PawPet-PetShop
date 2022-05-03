@@ -1,0 +1,102 @@
+.registro{
+    width: 100%;
+    height: auto;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .cajaRegistro{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .nuevoRegistro{
+            width: 93%;
+            max-width: 490px;
+            min-height: 34rem;
+            padding: 5%;
+            background-color: #0093E9;
+            background-image: linear-gradient(180deg, #0093E9 28%, #80D0C7 100%);
+            border-radius: 13px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            h1{
+                font-size: 1.7rem;
+                color: $blanco;
+                font-weight: bold;
+                margin-bottom: 30px;
+            }
+            .textoNombre{
+                margin: 0 0 1px 8px;
+                color: $blanco;
+                font-weight: bold;
+            }
+            .cajaNombre{
+                font-size: 1rem;
+                padding: 7px;
+                border-radius: 10px;
+                margin-bottom: 2%;
+                border: none;
+                &:focus{
+                    outline-color: $azul;
+                }
+            }
+            .correoRegistro{
+                margin: 0 0 1px 8px;
+                @extend .textoNombre;
+            }
+            .cajaEmail{
+                @extend .cajaNombre;
+            }
+            .textoClave{
+                margin: 0 0 1px 8px;
+                @extend .textoNombre;
+            }
+            .cajaClave{
+                @extend .cajaNombre;
+            }
+            .cajaNuevaClave{
+                @extend .cajaNombre;
+                margin-bottom: 15%;
+            }
+            .botonRegistro{
+                display: flex;
+                flex-direction: column;
+                .userName{
+                    padding: 10px 11px;
+                    background-color: $blanco;
+                    color: $azul;
+                    border:none;
+                    margin: 2% 0;
+                    text-decoration: none;
+                    text-align: center;
+                    font-weight: bold;
+                    border-radius: 13px;
+                    transition-duration: 0.3s;
+                    transition-timing-function: ease-in;
+                    &:hover{
+                        color: $blanco;
+                        border: 1px solid $blanco;
+                        background-color: $azul;
+                    }
+                    &:active{
+                        box-shadow: 0px 0px 6px 0px $verdeClaro inset;
+                        transition: .01s ease;
+                    }
+                    &:focus{
+                        outline-color: $azul;
+                    }
+                }
+            }
+            hr{
+                margin-top: 32%
+            }
+            .problemaUsuario{
+                color: $blanco;
+                text-decoration: none;
+                text-align: center;
+                font-weight: 500;
+            }
+        }
+    }
+}
