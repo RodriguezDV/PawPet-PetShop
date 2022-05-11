@@ -33,7 +33,6 @@ export class ListaProductos{
     }
 }
 
-
 //Constructor de productos seleccionados
 export class ProductosSeleccionados{
     constructor(){

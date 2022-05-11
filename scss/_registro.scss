@@ -41,6 +41,22 @@
                     outline-color: $azul;
                 }
             }
+            .mascota{
+                @extend .textoNombre;
+            }
+            .caja{
+                #lista{
+                    width: 100%;
+                    @extend .cajaNombre;
+                }
+            }
+            #imagenPerro{
+                width: 60%;
+                border-radius: 15px 3px 15px 3px;
+                margin-bottom: 10px;
+                box-shadow: -8px 9px 5px -5px rgba(0,0,0,0.75);
+                display: none;
+            }
             .correoRegistro{
                 margin: 0 0 1px 8px;
                 @extend .textoNombre;

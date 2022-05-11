@@ -1898,13 +1898,13 @@ footer .copyright a {
   margin-bottom: 30px;
 }
 
-.registro .cajaRegistro .nuevoRegistro .textoNombre, .registro .cajaRegistro .nuevoRegistro .correoRegistro, .registro .cajaRegistro .nuevoRegistro .textoClave {
+.registro .cajaRegistro .nuevoRegistro .textoNombre, .registro .cajaRegistro .nuevoRegistro .mascota, .registro .cajaRegistro .nuevoRegistro .correoRegistro, .registro .cajaRegistro .nuevoRegistro .textoClave {
   margin: 0 0 1px 8px;
   color: #ffff;
   font-weight: bold;
 }
 
-.registro .cajaRegistro .nuevoRegistro .cajaNombre, .registro .cajaRegistro .nuevoRegistro .cajaEmail, .registro .cajaRegistro .nuevoRegistro .cajaClave, .registro .cajaRegistro .nuevoRegistro .cajaNuevaClave {
+.registro .cajaRegistro .nuevoRegistro .cajaNombre, .registro .cajaRegistro .nuevoRegistro .caja #lista, .registro .cajaRegistro .nuevoRegistro .cajaEmail, .registro .cajaRegistro .nuevoRegistro .cajaClave, .registro .cajaRegistro .nuevoRegistro .cajaNuevaClave {
   font-size: 1rem;
   padding: 7px;
   border-radius: 10px;
@@ -1912,8 +1912,21 @@ footer .copyright a {
   border: none;
 }
 
-.registro .cajaRegistro .nuevoRegistro .cajaNombre:focus, .registro .cajaRegistro .nuevoRegistro .cajaEmail:focus, .registro .cajaRegistro .nuevoRegistro .cajaClave:focus, .registro .cajaRegistro .nuevoRegistro .cajaNuevaClave:focus {
+.registro .cajaRegistro .nuevoRegistro .cajaNombre:focus, .registro .cajaRegistro .nuevoRegistro .caja #lista:focus, .registro .cajaRegistro .nuevoRegistro .cajaEmail:focus, .registro .cajaRegistro .nuevoRegistro .cajaClave:focus, .registro .cajaRegistro .nuevoRegistro .cajaNuevaClave:focus {
   outline-color: #0093E9;
+}
+
+.registro .cajaRegistro .nuevoRegistro .caja #lista {
+  width: 100%;
+}
+
+.registro .cajaRegistro .nuevoRegistro #imagenPerro {
+  width: 60%;
+  border-radius: 15px 3px 15px 3px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: -8px 9px 5px -5px rgba(0, 0, 0, 0.75);
+          box-shadow: -8px 9px 5px -5px rgba(0, 0, 0, 0.75);
+  display: none;
 }
 
 .registro .cajaRegistro .nuevoRegistro .correoRegistro {

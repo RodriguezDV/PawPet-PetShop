@@ -30,10 +30,8 @@
 
 <body id="up">
     <header class="header">
-
         <div class="imgLogo"><a href="index.html"><img class="wow animate__animated animate__rollIn logo"
                     src="img/logoPetShop.png" alt="logo Paw-Pet Pet-Shop y Peluqueria canina"></a></div>
-
     </header>
 
     <main class="registro">
@@ -45,11 +43,21 @@
                 <label class="textoNombre" for="name">Nombre</label>
                 <input class="cajaNombre" type="text" name="nombre" required>
 
+                <div class="caja">
+                    <label class="mascota" for="name">Elige la raza de tu mascota</label>
+                    <form class="cajaLista">
+                        <select id="lista" onchange="razaSeleccionada(this)" required></select>
+                    </form>
+                    <div id="contenedor"></div>
+                </div>
+                <img id="imagenPerro" src="" alt="Foto de Perro">
+
                 <label class="correoRegistro" for="name">Correo electronico</label>
                 <input class="cajaEmail" type="email" name="nombre" required>
 
                 <label class="textoClave" for="name">Contraseña</label>
                 <input class="cajaClave" type="password" name="nombre" required>
+
 
                 <label class="textoClave" for="name">Repita su contraseña</label>
                 <input class="cajaNuevaClave" type="password" name="nombre" required>
@@ -98,9 +106,11 @@
         <div class="row text-center">
 
             <div class="col-md-4 box">
-                <span class="copyright quick-links">Copyright &copy; Daniela Rodriguez - <script>
+                <span class="copyright quick-links">Copyright &copy; Viviana Daniela Rodriguez - <script>
                         document.write(new Date().getFullYear())
-                    </script> | Tel: +549 113378-0479
+                    </script> | E-mail: viviana.rodriguez1930@gmail.com | <a
+                        href="https://www.linkedin.com/in/viviana-daniela-rodriguez/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i> Linkedin</a>
                 </span>
             </div>
         </div>
@@ -109,7 +119,7 @@
     <!--SweetAlert-->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!--INDEX.JS-->
-    <script src="js/index.js"></script>
+    <script src="js/perroRazas.js"></script>
     <!--JS-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
