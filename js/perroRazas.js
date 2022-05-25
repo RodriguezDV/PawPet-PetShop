@@ -2,7 +2,7 @@
 const contededor = document.querySelector("#contenedor");
 const url = "https://api.thedogapi.com/v1/breeds"
 
-const urlApi= 'https://api.thedogapi.com/v1'
+const urlApi = 'https://api.thedogapi.com/v1'
 const fetchMascota = async () => {
     const response = await fetch(urlApi + '/breeds')
     const data = await response.json()
@@ -19,20 +19,21 @@ const selector = (raza) => {
     })
     options.forEach(element => {
         select.appendChild(element)
-        
+
     })
 }
 
-const imgPerro = (imagenUrl) =>{
-
+const imgPerro = (imagenUrl) => {
     document.querySelector('#imagenPerro').setAttribute('src', imagenUrl);
     document.querySelector('#imagenPerro').setAttribute('style', 'display:block');
 }
 
-const perro = async(razaId) =>{
+const perro = async (razaId) => {
     const [data] = await fetch(urlApi + '/images/search?include_breed=1&breed_id=' + razaId)
-    .then((data) => data.json())
-    const {url: imagenUrl} = data;
+        .then((data) => data.json())
+    const {
+        url: imagenUrl
+    } = data;
     imgPerro(imagenUrl);
 }
 

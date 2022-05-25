@@ -154,6 +154,13 @@
                     color: $azul;
                     font-size: 1.1rem;
                 }
+                .cantidadProducto{
+                    width: 20%;
+                    padding: 4px;
+                    border-radius: 3px;
+                    color: $azul;
+                    border: 1px solid $azul;
+                }
             }
             .offcanvas-body{
                 text-align: center;

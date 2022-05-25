@@ -209,6 +209,14 @@
   font-size: 1.1rem;
 }
 
+.header .menuIngreso .offcanvas .sectorCarrito .cantidadProducto {
+  width: 20%;
+  padding: 4px;
+  border-radius: 3px;
+  color: #0093E9;
+  border: 1px solid #0093E9;
+}
+
 .header .menuIngreso .offcanvas .offcanvas-body {
   text-align: center;
   min-height: 20rem;
